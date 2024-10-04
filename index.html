@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Google Map with Extra Features</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Map Search with Traffic Information</h1>
+  </div>
+ 
+
+  <div id="controls">
+    <input id="origin-input" class="controls" type="text" placeholder="Enter starting location">
+    <input id="destination-input" class="controls" type="text" placeholder="Enter destination (optional)">
+    <select id="mode-select">
+      <option value="DRIVING">Car</option>
+      <option value="WALKING">Trekking</option>
+      <option value="BICYCLING">Bicycle</option>
+      <option value="TRANSIT">Public Transit</option>
+      <option value="AIRPLANE">Airplane</option>
+    </select>
+    
+    <button onclick="searchLocation()">Search</button>
+    <button onclick="getCurrentLocation()">Use Current Location</button>
+  </div>
+  
+
+
+  
+  <div id="map"></div>
+
+  <div id="live-update">
+    <h2>LIVE UPDATE FROM LOCATION:</h2>
+    <p id="update-content"></p>
+  </div>
+
+  <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyy6oGOi1RszNw273R10yXVx-flTJs_aSca&libraries=places,geometry&callback=initMap" async defer></script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
